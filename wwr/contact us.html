@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Whitewater Rafting (WWR)</title>
+  <meta name="description" content="Questions about trips, reservations, or our guides? Contact Whitewater Rafting (WWR). Call, email, or use the form to reach our team." />
+  <link rel="preload" href="styles/rafting.css" as="style">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="WWR Home" width="160" height="48" />
+      </a>
+      <h1 class="site-title">Whitewater Rafting</h1>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container contact-grid">
+    <h2>Contact Us</h2>
+
+
+    <section class="contact-card" aria-labelledby="contact-info-heading">
+      <h3 id="contact-info-heading">Company Information</h3>
+      <address class="vcard">
+        <p class="org">Whitewater Rafting (WWR)</p>
+        <p class="adr">
+          <span class="street-address">12 Zambezi Way</span>,
+          <span class="locality">Victoria Falls</span>,
+          <span class="country-name">Zimbabwe</span>
+        </p>
+        <p>
+          <a class="tel" href="tel:+263712345678">+263 71 234 5678</a> •
+          <a class="tel" href="tel:+263772345678">+263 77 234 5678</a>
+        </p>
+        <p>
+          <a class="email" href="mailto:info@wwr.example">info@wwr.example</a>
+        </p>
+      </address>
+      <div class="map-wrap">
+       
+        <iframe
+          title="Map showing Whitewater Rafting (WWR) in Victoria Falls"
+          src="https://www.google.com/maps?q=Victoria+Falls&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="team" aria-labelledby="team-heading">
+      <h3 id="team-heading">Meet the Team</h3>
+      <div class="team-grid">
+        <figure class="profile">
+          <img src="images/staff-amelia.jpg" alt="Amelia, Head Guide, smiling in a life jacket" width="320" height="360" />
+          <figcaption>Amelia Ndlovu — Head Guide</figcaption>
+        </figure>
+        <figure class="profile">
+          <img src="images/staff-tariro.jpg" alt="Tariro, Trips Coordinator, smiling by the river" width="320" height="360" />
+          <figcaption>Tariro Moyo — Trips Coordinator</figcaption>
+        </figure>
+        <figure class="profile">
+          <img src="images/staff-leon.jpg" alt="Leon, Safety Officer, smiling with helmet on" width="320" height="360" />
+          <figcaption>Leon Dube — Safety Officer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" aria-labelledby="form-heading">
+      <h3 id="form-heading">Send us a message</h3>
+      <form action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="First and last name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Purpose of your message</legend>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="purpose" value="general" required />
+              General Inquiry
+            </label>
+            <label>
+              <input type="radio" name="purpose" value="reservation" />
+              Reservation Question
+            </label>
+            <label>
+              <input type="radio" name="purpose" value="website" />
+              Website Suggestion
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+        </div>
+
+        <div class="form-row checkbox-row">
+          <label>
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            Please subscribe me to the monthly newsletter
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> Whitewater Rafting (WWR). All rights reserved.</p>
+      <p class="wireframe-link">
+        <a href="images/contact-wireframe.png">View Contact Page Wireframe</a>
+      </p>
+      <ul class="social">
+        <li><a href="#" aria-label="WWR on Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="WWR on Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="WWR on X (Twitter)">X</a></li>
+      </ul>
+    </div>
+    <script>
+      
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
